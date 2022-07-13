@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Karla", sans-serif;
+  font-size: 16px;
+  background: #e5eff5;
+}
+.container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.wrapper {
+  display: grid;
+  border-radius: 7px;
+  overflow: hidden;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "a a" "b c";
+  box-shadow: 0px 0px  14px 1px #00000024;
+}
+.item {
+  padding: 35px;
+}
+.item-1 {
+  grid-area: a;
+  background-color: #fff;
+}
+.item-2 {
+  grid-area: b;
+  background-color: #2ab2af;
+}
+.item-3 {
+  grid-area: c;
+  background-color: #4abebd;
+}
+.join {
+  color: #2ab2af;
+  font-size: 26px;
+  margin-bottom: 20px;
+}
+.guarantee {
+  color: #c0df34;
+  margin-bottom: 15px;
+}
+.item-1 p {
+  color: #98a6bd;
+  line-height: 1.4;
+}
+.subscription {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.item-2 p {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+.dollar {
+  color: #fff;
+  font-size: 28px;
+  font-weight: 700;
+  padding-right: 10px;
+}
+.per-month {
+  color: #e5eff5;
+  font-weight: 400;
+}
+.full {
+  color: #fff;
+}
+.item-2 a {
+  display: inline-block;
+  width: 100%;
+  text-align: center;
+  background-color: #c0df34;
+  text-decoration: none;
+  color: #fff;
+  font-weight: 700;
+  font-size: 13px;
+  padding: 15px;
+  border-radius: 6px;
+  margin-top: 30px;
+  box-shadow: 0px 4px 10px  1px #00000033;
+}
+.why {
+  color: #fff;
+  font-size: 20px;
+  margin-bottom: 15px;
+}
+.item-3 ul {
+  list-style: none;
+}
+.item-3 li {
+  color: #e5eff5;
+  line-height: 1.7;
+  font-size: 14px;
+}
+@media only screen and (max-width: 550px) {
+  .wrapper {
+    grid-template-columns: 100%;
+    grid-template-areas: "a" "b" "c";
+  }
+  .item {
+    padding: 30px;
+  }
+}
